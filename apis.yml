@@ -75,6 +75,10 @@ common:
     url: rate-limits/tradogram-rate-limits.yml
   - type: FinOps
     url: finops/tradogram-finops.yml
+  - type: BlogPosts
+    url: blogs/blogs.json
+  - type: JSONLDContext
+    url: json-ld/tradogram-context.jsonld
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com

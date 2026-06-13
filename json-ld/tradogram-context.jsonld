@@ -1,0 +1,96 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "tradogram": "https://www.tradogram.com/vocab#",
+    "aid": "https://apis.io/vocab#aid",
+    "baseURL": "https://apis.io/vocab#baseURL",
+
+    "PurchaseOrder": "tradogram:PurchaseOrder",
+    "Requisition": "tradogram:Requisition",
+    "Supplier": "tradogram:Supplier",
+    "Contract": "tradogram:Contract",
+    "Budget": "tradogram:Budget",
+    "Invoice": "tradogram:Invoice",
+    "Inventory": "tradogram:Inventory",
+    "SourceEvent": "tradogram:SourceEvent",
+    "ApprovalWorkflow": "tradogram:ApprovalWorkflow",
+    "SpendCategory": "tradogram:SpendCategory",
+
+    "poNumber": "tradogram:poNumber",
+    "requisitionNumber": "tradogram:requisitionNumber",
+    "supplierCode": "tradogram:supplierCode",
+    "contractNumber": "tradogram:contractNumber",
+    "budgetCode": "tradogram:budgetCode",
+    "invoiceNumber": "tradogram:invoiceNumber",
+    "lineItems": "tradogram:lineItems",
+    "approvalStatus": "tradogram:approvalStatus",
+    "totalAmount": "tradogram:totalAmount",
+    "currency": "tradogram:currency",
+    "deliveryDate": "tradogram:deliveryDate",
+    "paymentTerms": "tradogram:paymentTerms",
+    "procureToPay": "tradogram:procureToPay",
+    "spendCategory": "tradogram:spendCategory"
+  },
+  "@graph": [
+    {
+      "@id": "https://www.tradogram.com",
+      "@type": "SoftwareApplication",
+      "name": "Tradogram",
+      "description": "Cloud-based procurement management platform providing procure-to-pay workflow automation for businesses.",
+      "url": "https://www.tradogram.com",
+      "applicationCategory": "BusinessApplication",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://www.tradogram.com/pricing"
+      }
+    },
+    {
+      "@id": "https://api.tradogram.com/v1.0.2",
+      "@type": "WebAPI",
+      "name": "Tradogram API",
+      "description": "RESTful API enabling two-way data synchronization between Tradogram and external ERP, accounting, or business systems.",
+      "documentation": "https://www.tradogram.com/software/integrations",
+      "provider": {
+        "@id": "https://www.tradogram.com"
+      },
+      "termsOfService": "https://www.tradogram.com/company/contact-us",
+      "potentialAction": [
+        {
+          "@type": "Action",
+          "name": "ManagePurchaseOrders",
+          "description": "Create, read, update, and delete purchase orders"
+        },
+        {
+          "@type": "Action",
+          "name": "ManageRequisitions",
+          "description": "Create and process procurement requisitions"
+        },
+        {
+          "@type": "Action",
+          "name": "ManageSuppliers",
+          "description": "Manage supplier catalog and supplier data"
+        },
+        {
+          "@type": "Action",
+          "name": "ManageContracts",
+          "description": "Create and track supplier contracts"
+        },
+        {
+          "@type": "Action",
+          "name": "ManageBudgets",
+          "description": "Track and manage procurement budgets"
+        },
+        {
+          "@type": "Action",
+          "name": "ManageInvoices",
+          "description": "Process accounts payable invoices"
+        },
+        {
+          "@type": "Action",
+          "name": "ManageInventory",
+          "description": "Track and manage inventory levels"
+        }
+      ]
+    }
+  ]
+}
