@@ -1,0 +1,95 @@
+name: Tradogram FinOps
+description: >-
+  FinOps Framework 1.0 FOCUS-aligned cost and usage metadata for the
+  Tradogram cloud-based procurement management platform API.
+specificationVersion: '1.0'
+url: https://www.tradogram.com/pricing
+provider:
+  name: Tradogram
+  url: https://www.tradogram.com
+  billingContact: INFO@TRADOGRAM.COM
+costModel:
+  type: SaaS Subscription
+  billingCycles:
+    - monthly
+    - annual
+  currency: USD
+  notes: >-
+    Annual billing provides lower per-month rates. Implementation, training,
+    and certain integrations carry additional fees not included in base
+    subscription pricing.
+skus:
+  - id: tradogram-basic
+    name: Basic (Free)
+    description: Free single-user tier with limited transactions; no API access.
+    unitPrice: 0
+    currency: USD
+    billingCycle: monthly
+    minimumUsers: 1
+    maximumUsers: 1
+    apiAccess: false
+    transactionsPerMonth: 5
+  - id: tradogram-pro-annual
+    name: Pro (Annual)
+    description: Full-featured procurement automation for small teams, billed annually.
+    unitPrice: 225
+    currency: USD
+    billingCycle: annual
+    minimumUsers: 1
+    apiAccess: true
+    transactionsPerMonth: unlimited
+  - id: tradogram-premium-annual
+    name: Premium (Annual)
+    description: >-
+      Multi-entity, white-label tier for mid-market organizations, billed
+      annually with minimum ten users.
+    unitPrice: 425
+    currency: USD
+    billingCycle: annual
+    minimumUsers: 10
+    apiAccess: true
+    transactionsPerMonth: unlimited
+  - id: tradogram-enterprise
+    name: Enterprise
+    description: >-
+      Custom-priced tier with unlimited users, dedicated support, and custom
+      integrations. Minimum twenty users.
+    unitPrice: custom
+    currency: USD
+    billingCycle: annual
+    minimumUsers: 20
+    apiAccess: true
+    transactionsPerMonth: unlimited
+costAllocation:
+  dimensions:
+    - name: Plan Tier
+      values:
+        - Basic
+        - Pro
+        - Premium
+        - Enterprise
+    - name: User Count
+      description: Costs scale with the number of licensed users on Premium and Enterprise tiers.
+    - name: Add-Ons
+      description: >-
+        Implementation, training, and certain integrations (e.g., ERP connectors,
+        PunchOuts, SSO) are billed separately.
+optimization:
+  recommendations:
+    - description: >-
+        Choose annual billing over monthly to reduce per-month subscription cost
+        on Pro and Premium plans.
+    - description: >-
+        Use the free Basic tier for evaluation before committing to a paid plan.
+        Note that API access requires at least the Pro tier.
+    - description: >-
+        Consolidate users under a single Premium or Enterprise instance when
+        managing multiple subsidiaries to avoid paying for separate Pro
+        subscriptions per entity.
+    - description: >-
+        Request a custom Enterprise quote when user counts exceed thresholds
+        where per-user costs on Premium become uneconomical.
+notes: >-
+  Tradogram does not publish public API usage-based pricing. All billing is
+  flat-rate subscription per plan tier. FinOps visibility is primarily driven
+  by user seat counts and plan selection rather than API call volume.

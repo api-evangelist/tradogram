@@ -1,0 +1,46 @@
+name: Tradogram API Rate Limits
+description: >-
+  Rate limit information for the Tradogram REST API (https://api.tradogram.com/v1.0.2).
+  Tradogram does not publicly publish specific numeric rate limits in their
+  documentation. The following reflects known constraints derived from
+  integration connector documentation and platform behavior. Contact
+  Tradogram support for current enforcement thresholds.
+specificationVersion: '0.1'
+url: https://www.tradogram.com/software/integrations
+limits:
+  - name: API Key Authentication Required
+    description: >-
+      All API requests must include a valid API key (organization token) obtained
+      from the Tradogram dashboard under API Integration settings. Requests
+      without a valid key are rejected.
+    scope: global
+    enforcement: hard
+  - name: Free Tier Transaction Limit
+    description: >-
+      Accounts on the Basic (free) plan are limited to five transactions per
+      month across the platform. API access is not available on the Basic plan.
+    scope: account
+    period: monthly
+    limit: 5
+    unit: transactions
+    enforcement: hard
+    tier: Basic
+  - name: Paid Tier Transactions
+    description: >-
+      Pro, Premium, and Enterprise plan accounts support unlimited transactions
+      via both the UI and API. No documented per-minute or per-hour request
+      caps are published for paid tiers.
+    scope: account
+    limit: unlimited
+    unit: transactions
+    enforcement: none
+    tier:
+      - Pro
+      - Premium
+      - Enterprise
+notes: >-
+  Tradogram does not publicly document explicit API rate limits (requests per
+  minute/hour/day) for paid tiers. Developers should implement retry logic with
+  exponential back-off and contact Tradogram at INFO@TRADOGRAM.COM or
+  +1 844 328 9523 for current rate limit policies before building
+  high-volume integrations.

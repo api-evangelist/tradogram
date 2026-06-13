@@ -1,0 +1,80 @@
+aid: tradogram
+name: Tradogram
+description: >-
+  Tradogram is a cloud-based procurement management platform that provides
+  businesses with comprehensive tools to control costs and automate
+  procure-to-pay workflows. The platform enables organizations to manage
+  purchase orders, supplier catalogs, budgets, contracts, and accounts
+  payable through a unified interface. Tradogram exposes a RESTful API at
+  https://api.tradogram.com/v1.0.2 that allows developers to build two-way
+  integrations between Tradogram and external ERP, accounting, or business
+  systems. The API uses API key authentication obtained from the Tradogram
+  dashboard and supports operations across requisitions, purchase orders,
+  sourcing, receiving, invoicing, contracts, and inventory. Tradogram serves
+  small to mid-market teams and enterprises across industries including
+  education, healthcare, and technology seeking structured spend visibility
+  and approval routing without heavyweight ERP complexity.
+type: Index
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+url: https://raw.githubusercontent.com/api-evangelist/tradogram/refs/heads/main/apis.yml
+created: '2026-06-13'
+modified: '2026-06-13'
+specificationVersion: '0.19'
+tags:
+  - Procurement
+  - Purchase Orders
+  - Supplier Management
+  - Spend Management
+  - Contracts
+  - Budgets
+  - Accounts Payable
+  - Sourcing
+  - Inventory
+  - Procure-to-Pay
+apis:
+  - aid: tradogram:tradogram-api
+    name: Tradogram API
+    description: >-
+      The Tradogram REST API enables two-way data synchronization between
+      Tradogram and external systems. It provides programmatic access to core
+      procurement modules including purchase orders, requisitions, suppliers,
+      contracts, budgets, AP invoices, and inventory. Authentication is handled
+      via API key obtained from the Tradogram dashboard under API Integration
+      settings.
+    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    humanURL: https://www.tradogram.com/software/integrations
+    baseURL: https://api.tradogram.com/v1.0.2
+    tags:
+      - Procurement
+      - Purchase Orders
+      - Supplier Management
+      - Budgets
+      - Contracts
+      - Accounts Payable
+    properties:
+      - type: Documentation
+        url: https://www.tradogram.com/software/integrations
+      - type: OpenAPI
+        url: https://www.tradogram.com/software/integrations
+common:
+  - type: Website
+    url: https://www.tradogram.com
+  - type: Documentation
+    url: https://www.tradogram.com/software/integrations
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/tradogram
+  - type: Blog
+    url: https://www.tradogram.com/resources/blog
+  - type: Pricing
+    url: https://www.tradogram.com/pricing
+  - type: X
+    url: https://twitter.com/tradogram
+  - type: Plans
+    url: plans/tradogram-plans-pricing.yml
+  - type: RateLimits
+    url: rate-limits/tradogram-rate-limits.yml
+  - type: FinOps
+    url: finops/tradogram-finops.yml
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com

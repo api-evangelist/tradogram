@@ -1,0 +1,83 @@
+name: Tradogram Plans and Pricing
+description: Pricing tiers for the Tradogram cloud-based procurement management platform.
+specificationVersion: '0.1'
+url: https://www.tradogram.com/pricing
+plans:
+  - name: Basic
+    description: >-
+      Free tier for individual users evaluating Tradogram. Limited to a single
+      user and five transactions per month with restricted item and supplier
+      counts. Integrations including API access are not available on this tier.
+    price: 0
+    currency: USD
+    billingCycle: monthly
+    features:
+      - Single user
+      - Five transactions per month
+      - Limited items and suppliers
+      - Core procurement features
+    limitations:
+      - No integrations
+      - No API access
+      - No multi-company support
+  - name: Pro
+    description: >-
+      Entry-level paid tier for small teams needing full procurement automation.
+      Includes unlimited transactions, items, suppliers, and categories plus all
+      core procurement modules. Billed annually.
+    price: 225
+    currency: USD
+    billingCycle: annual
+    minimumUsers: 1
+    features:
+      - Unlimited transactions
+      - Unlimited items and suppliers
+      - Requisitions and purchase orders
+      - Expenses and sourcing RFx
+      - Receiving and AP invoices with OCR
+      - Project and contract management
+      - Inventory management
+      - Custom approval routing
+      - Report builder
+      - Budget tracking
+      - Mobile apps
+      - Multi-level departments
+      - Knowledge base support
+      - API integration
+  - name: Premium
+    description: >-
+      Mid-market tier supporting multi-entity organizations requiring multiple
+      companies or locations, custom white-labeling, and priority support.
+      Billed annually with a minimum of ten users.
+    price: 425
+    currency: USD
+    billingCycle: annual
+    minimumUsers: 10
+    features:
+      - All Pro features
+      - Multiple companies and locations
+      - Custom white-label branding
+      - Priority support
+      - API integration
+      - SSO support
+  - name: Enterprise
+    description: >-
+      Custom-priced enterprise tier for large organizations requiring unlimited
+      users, a dedicated account manager, custom integrations, custom feature
+      development, and flexible hosting options. Minimum twenty users.
+    price: custom
+    currency: USD
+    billingCycle: annual
+    minimumUsers: 20
+    features:
+      - All Premium features
+      - Unlimited users
+      - Dedicated account manager
+      - Custom integrations and feature development
+      - Custom hosting options
+      - Advanced API access
+      - SSO
+notes: >-
+  Implementation, training, and certain integrations carry additional fees.
+  Contact Tradogram sales for Enterprise pricing. Annual billing prices shown;
+  monthly billing available at higher rates.
