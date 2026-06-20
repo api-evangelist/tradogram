@@ -15,7 +15,7 @@ description: >-
   education, healthcare, and technology seeking structured spend visibility
   and approval routing without heavyweight ERP complexity.
 type: Index
-image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
 url: https://raw.githubusercontent.com/api-evangelist/tradogram/refs/heads/main/apis.yml
 created: '2026-06-13'
 modified: '2026-06-13'
@@ -41,7 +41,7 @@ apis:
       contracts, budgets, AP invoices, and inventory. Authentication is handled
       via API key obtained from the Tradogram dashboard under API Integration
       settings.
-    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     humanURL: https://www.tradogram.com/software/integrations
     baseURL: https://api.tradogram.com/v1.0.2
     tags:
