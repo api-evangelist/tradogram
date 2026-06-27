@@ -1,102 +1,14 @@
 {
-  "meta": {
-    "source": "https://www.tradogram.com/resources/blog",
-    "fetched": "2026-06-13",
-    "provider": "tradogram"
-  },
-  "posts": [
-    {
-      "title": "Beyond Checkbox Compliance: How Real-Time Monitoring Protects Your Procurement ROI",
-      "url": "https://www.tradogram.com/blog/beyond-checkbox-compliance-how-real-time-monitoring-protects-your-procurement-roi",
-      "date": "2026-05-20",
-      "category": "Procurement 101",
-      "description": "Explores real-time monitoring strategies to safeguard procurement returns and move past superficial compliance measures."
-    },
-    {
-      "title": "The $422 Leak: Why Supplier Fragmentation is Killing Your Bottom Line (and the 5-Step Fix)",
-      "url": "https://www.tradogram.com/blog/the-422-leak-why-supplier-fragmentation-is-killing-your-bottom-line-and-the-5-step-fix",
-      "date": "2026-05-15",
-      "category": "Cost Reduction & Process Optimization",
-      "description": "Addresses hidden costs from supplier fragmentation and provides a structured solution framework."
-    },
-    {
-      "title": "Tradogram vs Procurify: Why Spend Management Alone Is Not Enough for Modern Procurement",
-      "url": "https://www.tradogram.com/blog/tradogram-vs-procurify-why-spend-management-alone-is-not-enough-for-modern-procurement",
-      "date": "2026-04-29",
-      "category": "Procurement Software & Tools",
-      "description": "Comparative analysis of procurement platforms and the limitations of spend-only approaches."
-    },
-    {
-      "title": "Agentic Procurement in 2026: How SMBs Can Move Beyond the Hype to Autonomous Orchestration",
-      "url": "https://www.tradogram.com/blog/agentic-procurement-in-2026-how-smbs-can-move-beyond-the-hype-to-autonomous-orchestration",
-      "date": "2026-04-15",
-      "category": "Procurement Trends & Technology",
-      "description": "Examines AI-driven procurement strategies for small-to-medium businesses seeking competitive advantage."
-    },
-    {
-      "title": "The Q2 Margin Rescue: 5 'Invisible' Procurement Cost Savings Your Team is Overlooking",
-      "url": "https://www.tradogram.com/blog/the-q2-margin-rescue-5-invisible-procurement-cost-savings-your-team-is-overlooking",
-      "date": "2026-04-09",
-      "category": "Cost Reduction & Process Optimization",
-      "description": "Identifies overlooked cost optimization opportunities and tail spend strategies."
-    },
-    {
-      "title": "Tradogram vs Fraxion: A Complete Procurement Software Comparison",
-      "url": "https://www.tradogram.com/blog/tradogram-vs-fraxion-a-complete-procurement-software-comparison",
-      "date": "2026-03-24",
-      "category": "Procurement Software & Tools",
-      "description": "Direct comparison of procurement platform capabilities and user experience."
-    },
-    {
-      "title": "The Importance a Procurement Software for Mid-Size Businesses",
-      "url": "https://www.tradogram.com/blog/the-importance-a-procurement-software-for-mid-size-businesses",
-      "date": "2026-03-07",
-      "category": "Procurement 101",
-      "description": "Demonstrates how procurement solutions enhance operational efficiency for mid-market organizations."
-    },
-    {
-      "title": "Best Practices for Using a Procurement Software Effectively",
-      "url": "https://www.tradogram.com/blog/best-practices-for-using-a-procurement-software-effectively",
-      "date": "2026-03-10",
-      "category": "Procurement 101",
-      "description": "Outlines implementation strategies and optimization tactics for procurement platforms."
-    },
-    {
-      "title": "The Framework: Understanding Procurement in Construction",
-      "url": "https://www.tradogram.com/blog/the-framework-understanding-procurement-in-construction",
-      "date": "2026-03-03",
-      "category": "Industry-Specific Procurement Guides",
-      "description": "Industry-focused guidance on procurement visibility and supplier management for construction."
-    },
-    {
-      "title": "Procure-to-Pay vs Purchase-to-Pay: What's the Difference?",
-      "url": "https://www.tradogram.com/blog/introduction-navigating-procurement-and-purchasing",
-      "date": "2026-03-06",
-      "category": "Procurement 101",
-      "description": "Clarifies distinctions between procurement and purchasing processes and approaches."
-    },
-    {
-      "title": "Understanding Procurement Software in 2026",
-      "url": "https://www.tradogram.com/blog/understanding-procurement-software-in-2026",
-      "date": "2026-02-16",
-      "category": "Procurement Software & Tools",
-      "description": "Overview of contemporary procurement technology evolution and market transformation."
-    },
-    {
-      "title": "9 Essential E Sourcing Platforms Features for 2026 Success",
-      "url": "https://www.tradogram.com/blog/e-sourcing-platforms",
-      "date": "2026-02-10",
-      "category": "Procurement 101",
-      "description": "Identifies critical capabilities for sourcing platforms in today's digital landscape."
-    }
-  ],
   "repo": "tradogram",
   "feeds": [
     {
-      "source": "https://www.linkedin.com/company/tradogram",
-      "error": "HTTPError"
+      "source": "https://www.tradogram.com/resources/blog",
+      "feed_url": "",
+      "saved": 0,
+      "method": "agent-scrape"
     }
   ],
   "post_count": 0,
-  "fetched": "2026-06-14T20:42:17Z"
+  "fetched": "2026-06-27T13:16:26Z",
+  "agent_pulled": "2026-06-27"
 }
