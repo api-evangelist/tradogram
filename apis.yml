@@ -15,6 +15,17 @@ description: >-
   education, healthcare, and technology seeking structured spend visibility
   and approval routing without heavyweight ERP complexity.
 type: Index
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: freemium
   onboarding: unknown
